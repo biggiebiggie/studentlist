@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Studentlist 1991</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <h1>Studentlist</h1>
+
+    <section id="buttons">
+        <div id="sorting">
+            Sort by:
+            <button id="sort_first">First name</button>
+            <button id="sort_last">Last name</button>
+
+        </div>
+    </section>
+
+
+    <table id="studentlist">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Middle name</th>
+                <th>Last name</th>
+                <th>Delete</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div id="student_details">
+        <h2>Student Details</h2>
+        <h3>Name:
+            </h1>
+            <div id="student_fullname"></div>
+            <h3>Email:
+                </h2>
+                <div id="student_email"></div>
+    </div>
+
+    <template id="student_template">
+        <tr>
+            <td data-firstname>FIRSTNAME</td>
+            <td data-middlename>MIDDLENAME</td>
+            <td data-lastname>LASTNAME</td>
+            <td><button class="delete_button">delete</button></td>
+            <td><button class="details_button">details</button></td>
+        </tr>
+    </template>
+
+    <script src="script.js"></script>
+    <script src="frontend.js"></script>
+</body>
+
+</html>
